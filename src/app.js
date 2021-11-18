@@ -15,7 +15,7 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 app.set('view engine', 'hbs')
 hbs.registerPartials(partialsPath)
 
-// if we change the name of the folder from 'views' we need to explain node the new folder name
+// if we change the name of the folder from 'views' we need to explain node what is the new folder name
 const viewPaths = path.join(__dirname, '../templates/views')
 app.set('views',viewPaths)
 
@@ -70,8 +70,7 @@ app.get('/weather', (req, res) => {
 
             res.send({
                 forecast: response,
-                placeName,
-                address
+                placeName
             })
         })
     })  
@@ -111,3 +110,5 @@ app.get('*', (req,res) => {
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
+console.log('test')
+console.log('asdasdasd')
