@@ -111,3 +111,6 @@ app.get('*', (req,res) => {
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
+
+console.log('testttttt2')
+console.log('testttttt3')
